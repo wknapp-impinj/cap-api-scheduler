@@ -27,7 +27,7 @@ std::condition_variable batch;
 
 int main(void)
 {
-  scheduler::Config config("../config.json");
+  scheduler::Config config("/cust/config.json");
   scheduler::util::log("Application Started (interval=%d, duration=%d)", config.getInterval(), config.getDuration());
 
   std::chrono::seconds cs_interval{config.getInterval()};
