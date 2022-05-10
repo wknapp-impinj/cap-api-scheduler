@@ -21,9 +21,9 @@
 
 using json = nlohmann::json;
 
-std::mutex thread_mutex;       ///< Mutex for thread sync with condition variable.
-bool stop_thread{false};       ///< Should the batching thread be stopped?
-std::condition_variable batch; ///< Condition variable used for thread wait, sync.
+std::mutex thread_mutex;
+bool stop_thread{false};
+std::condition_variable batch;
 
 int main(void)
 {

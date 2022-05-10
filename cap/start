@@ -1,2 +1,4 @@
 #!/bin/bash
 
+## Uncomment the following line to enable
+#/cust/bin/schedler
