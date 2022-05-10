@@ -1,0 +1,4 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSROOT $ENV{TOOLCHAIN_ROOT}/arm-buildroot-linux-gnueabihf/sysroot/)
+set(CMAKE_C_COMPILER $ENV{TOOLCHAIN_ROOT}/bin/arm-none-linux-gnueabihf-gcc)
+set(CMAKE_CXX_COMPILER $ENV{TOOLCHAIN_ROOT}/bin/arm-none-linux-gnueabihf-g++)

@@ -1,0 +1,8 @@
+{
+    "username": "root",
+    "password": "impinj",
+    "profile": "inventory",
+    "preset": "default",
+    "interval": 50,
+    "duration": 10
+}

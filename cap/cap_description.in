@@ -1,0 +1,9 @@
+# Upgrade Description File
+#
+# This file contains the settings used by the upgrade generation tool
+# to produce an Impinj firmware upgrade file.
+
+[Description]
+Version = 0.1.0.0
+Valid Reader Hardware = R***
+Input Directory = ./cap
