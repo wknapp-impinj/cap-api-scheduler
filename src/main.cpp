@@ -42,7 +42,7 @@ int main(void)
     batch.wait_for(lock, cs_interval, []()
                    { return stop_thread; });
 
-    scheduler::util::log("Starting profile '%s', preset '%s'", config.getProfile(), config.getPreset());
+    scheduler::util::log("Starting profile '%s', preset '%s'", config.getProfile().c_str(), config.getPreset().c_str());
     response = (&api)->StartPreset(config.getProfile(), config.getPreset());
     scheduler::util::log("result code= %d", response.res);
 
