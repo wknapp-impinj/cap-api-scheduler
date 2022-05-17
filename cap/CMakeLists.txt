@@ -11,9 +11,10 @@ add_custom_target(
     COMMENT "Staging CAP..."
     WORKING_DIRECTORY "${CMAKE_BINARY_DIR}"
     VERBATIM
-    COMMAND ${CMAKE_COMMAND} -E copy scheduler/scheduler ${CAP_PATH}/bin/scheduler
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/start ${CAP_PATH}/start
+    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/reader.conf ${CAP_PATH}/sys/reader.conf
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_SOURCE_DIR}/config.json ${CAP_PATH}/config.json
+    COMMAND ${CMAKE_COMMAND} -E copy scheduler/scheduler ${CAP_PATH}/bin/scheduler
 )
 
 add_custom_target(

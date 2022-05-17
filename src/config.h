@@ -10,6 +10,7 @@
  * (c) Copyright 2022 Impinj, Inc. All rights reserved.                      *
  *                                                                           *
  *****************************************************************************/
+#pragma once
 
 #include <string>
 
